@@ -1,9 +1,3 @@
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
 h1,
 h2 {
   color: #016c80;
@@ -26,17 +20,23 @@ h1 {
   align-items: normal;
   align-content: normal;
   gap: 30px;
-  width: 60%;
-  min-width: 780px;
+  min-width: 540px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (width <= 1000px) {
-    .container {
-        width: 90%;
-      }
+@media screen and (width > 900px) {
+  .container {
+    width: 900px;
   }
+}
+
+@media screen and (width <= 900px) {
+  .container {
+    flex-direction: column;
+    width: 540px;
+  }
+}
 
 .personal-photo {
   object-fit: cover;
@@ -56,50 +56,50 @@ h1 {
   flex-basis: 230px;
 }
 
-.image{
-    display: flex;
-    justify-content: center;
+.image {
+  display: flex;
+  justify-content: center;
 }
 
 .left-column h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .about-experience-container h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-
 .subtitle {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .right-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .about-experience-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
 }
 
 .experience {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.right-column h4{
-    margin-top: 0;
-    font-weight: 400;
+.right-column h4 {
+  margin-top: 0;
+  font-weight: 400;
 }
 
-.right-column h3{
-    margin-bottom: 0;
+.right-column h3 {
+  margin-bottom: 0;
 }
 
 .contact {
