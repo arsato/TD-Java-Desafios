@@ -1,0 +1,111 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+ }
+
+header{
+    margin: 0;
+    height: 73px;
+    padding: 0;
+}
+
+header h1{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 11px;
+    font-weight: 500;
+}
+
+.hero img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main article{
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main p{
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+}
+
+main img{
+    width: 399px;
+    height: 237px;
+    vertical-align: middle;
+}
+
+.icons-section{
+    background-color: #1E1A13;
+    color: #ffffff;
+    height: 348px;
+    padding: 1px;
+}
+
+.icons-section h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.icons-section article{
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+}
+
+.icons-section article i{
+    display: block;
+}
+
+.icons-section article p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.photos{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.photos img{
+    width: 316px;
+    height: 202px;
+    margin: 10px;
+    display: inline-block;
+}
+
+footer{
+    background-color: #1E1A13;
+    color: #ffffff;
+    height: 102px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 39px;
+    margin: 0;
+}
