@@ -28,19 +28,19 @@ header h1{
     margin: 0 auto;
 }
 
-main {
+.desc-section {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-main article{
+.desc-section article{
     width: 49%;
     display: inline-block;
     vertical-align: middle;
 }
 
-main p{
+.desc-section p{
     padding-left: 40px;
     padding-right: 40px;
     color: #ffffff;
@@ -48,7 +48,7 @@ main p{
     text-align: left;
 }
 
-main img{
+.desc-section img{
     width: 399px;
     height: 237px;
     vertical-align: middle;
