@@ -1,0 +1,74 @@
+:root {
+    --open-sans: "Open Sans", sans-serif;
+    --regular: 400;
+    --bold: 700;
+    --black: #212529;
+    --white: #fff;
+    --pink: #e83e8c;
+    --info: #17a2b8;
+    --gray: #707070;
+    --light-blue: #1C7CD5;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.productos h1 {
+    font-size: 60px;
+    color: var(--gray);
+}
+
+.navbar {
+    background-color: var(--pink);
+}
+
+.navbar img{
+    width: 132px;
+}
+
+.nav-item a {
+    color: var(--white)
+}
+
+.card {
+    width: 248px;
+}
+
+.card img{
+    height: 132px;
+}
+
+.productos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.card-link{
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.icon-section{
+    min-height: 170px;
+    background-color: var(--info);
+    color: var(--white);
+}
+
+.icon-section p{
+    font-size: 50px;
+    font-weight: var(--bold);
+}
+
+footer{
+    min-height: 184px;
+    background-color: var(--pink);
+}
+
+footer img{
+    width: 53px;
+}
