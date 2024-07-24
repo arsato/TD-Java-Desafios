@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "books")
+@NamedQuery(name = "Book.findByAuthor", query = "select b from Book b where b.author = ?1")
+@NamedQuery(name = "Book.findByTitle", query = "select b from Book b where b.title = ?1")
 public class Book {
 
     @Id

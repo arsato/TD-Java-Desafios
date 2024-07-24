@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+    >
+    <title>Books</title>
+</head>
+<body>
+<header th:include="~{../static/html/header.html}" ></header>
+
+<form th:action="@{/books/search}" method="get">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search by author" name="author">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+    </div>
+</form>
+
+
+<section class="container">
+    <h2>Tabla de libros</h2>
+    <table class="table">
+        <thead class="table-header">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Editorial</th>
+            <th scope="col">Año</th>
+            <th scope="col">Edición</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book: ${libros}">
+            <td th:text="${book.id}"></td>
+            <td th:text="${book.title}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.editorial}"></td>
+            <td th:text="${book.year}"></td>
+            <td th:text="${book.edition}"></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
