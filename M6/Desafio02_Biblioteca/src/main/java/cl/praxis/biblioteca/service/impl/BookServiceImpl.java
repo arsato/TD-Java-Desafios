@@ -3,7 +3,6 @@ package cl.praxis.biblioteca.service.impl;
 import cl.praxis.biblioteca.entity.Book;
 import cl.praxis.biblioteca.repository.IBookRepository;
 import cl.praxis.biblioteca.service.IBookService;
-import cl.praxis.biblioteca.service.ICRUDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
